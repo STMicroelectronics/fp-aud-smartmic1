@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Release Notes for X-NUCLEO-CCA01M1 Board Drivers</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <link rel="stylesheet" href="_htmresc/mini-st_2020.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <link rel="icon" type="image/x-icon" href="_htmresc/favicon.png" />
+</head>
+<body>
+<div class="row">
+<div class="col-sm-12 col-lg-4">
+<center>
+<h1 id="release-notes-for-x-nucleo-cca01m1-board-drivers">Release Notes for <mark>X-NUCLEO-CCA01M1 Board Drivers</mark></h1>
+<p>Copyright © 2022 STMicroelectronics<br />
+</p>
+<a href="https://www.st.com" class="logo"><img src="_htmresc/st_logo_2020.png" alt="ST logo" /></a>
+</center>
+<h1 id="purpose">Purpose</h1>
+<p>The BSP (Board Specific Package) X-NUCLEO-CCA01M1 Board Drivers are based on the HAL drivers and provide a set of high level APIs relative to the hardware components and features in the evaluation board for a given STM32 processor</p>
+<p>The BSP drivers allow a quick access to the boards’ services using high level APIs and without any specific configuration as the link with the HAL and the external components is done in intrinsic within the drivers.</p>
+<p>Here is the list of references to user documents:</p>
+<ul>
+<li><a href="https://www.st.com/resource/en/user_manual/dm00245482.pdf">UM1979</a> : Getting started with sound terminal expansion board based on STA350BW for STM32 Nucleo</li>
+<li><a href="http://www.st.com/stm32cube">STM32Cube</a> : STM32Cube</li>
+</ul>
+</div>
+<div class="col-sm-12 col-lg-8">
+<h1 id="update-history">Update history</h1>
+<div class="collapse">
+<input type="checkbox" id="collapse-section10" checked aria-hidden="true"> <label for="collapse-section10" aria-hidden="true">v3.1.0 / 31-Aug-2022</label>
+<div>
+<h2 id="main-changes">Main Changes</h2>
+<h3 id="product-update">Product update</h3>
+<ul>
+<li>Updated licensing and signatures in files</li>
+</ul>
+<h2 id="supported-devices-and-boards">Supported Devices and Boards</h2>
+<ul>
+<li><a href="https://www.st.com/en/ecosystems/x-nucleo-cca01m1.html">X-NUCLEO-CCA01M1</a></li>
+</ul>
+</div>
+</div>
+<div class="collapse">
+<input type="checkbox" id="collapse-section9" aria-hidden="true"> <label for="collapse-section9" aria-hidden="true">v3.0.2 / 15-Jan-2021</label>
+<div>
+<h2 id="main-changes-1">Main changes</h2>
+<h3 id="patch-release">Patch release</h3>
+<p>Fixed bugs list</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Headline</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Solved MISRA warning in CCA01M1_AUDIO_OUT_SetDevice</td>
+</tr>
+</tbody>
+</table>
+<h2 id="supported-devices-and-boards-1">Supported Devices and Boards</h2>
+<ul>
+<li><a href="https://www.st.com/en/ecosystems/x-nucleo-cca01m1.html">X-NUCLEO-CCA01M1</a></li>
+</ul>
+</div>
+</div>
+<div class="collapse">
+<input type="checkbox" id="collapse-section8" aria-hidden="true"> <label for="collapse-section8" aria-hidden="true">v3.0.1 / 31-Aug-2020</label>
+<div>
+<h2 id="main-changes-2">Main Changes</h2>
+<h3 id="patch-release-1">Patch release</h3>
+<ul>
+<li>Solved issue in AUDIO_OUT_Stop</li>
+</ul>
+<h2 id="supported-devices-and-boards-2">Supported Devices and Boards</h2>
+<ul>
+<li><a href="https://www.st.com/en/ecosystems/x-nucleo-cca01m1.html">X-NUCLEO-CCA01M1</a></li>
+</ul>
+</div>
+</div>
+<div class="collapse">
+<input type="checkbox" id="collapse-section7" aria-hidden="true"> <label for="collapse-section7" aria-hidden="true">v3.0.0 / 06-May-2019</label>
+<div>
+<h2 id="main-changes-3">Main Changes</h2>
+<h3 id="product-update-1">Product update</h3>
+<ul>
+<li>Code refactoring according to BSP specification v2.6</li>
+<li>cca01m1_audio.c/.h supports STM32L0, STM32F0, STM32L4, STM32F4 and STM32F7</li>
+</ul>
+<h2 id="supported-devices-and-boards-3">Supported Devices and Boards</h2>
+<ul>
+<li><a href="https://www.st.com/en/ecosystems/x-nucleo-cca01m1.html">X-NUCLEO-CCA01M1</a></li>
+</ul>
+</div>
+</div>
+<div class="collapse">
+<input type="checkbox" id="collapse-section6" aria-hidden="true"> <label for="collapse-section6" aria-hidden="true">v2.0.0 / 02-Mar-2017</label>
+<div>
+<h2 id="main-changes-4">Main Changes</h2>
+<h3 id="product-update-2">Product update</h3>
+<ul>
+<li>Added support for handles structures for all MCU</li>
+</ul>
+<h2 id="supported-devices-and-boards-4">Supported Devices and Boards</h2>
+<ul>
+<li><a href="https://www.st.com/en/ecosystems/x-nucleo-cca01m1.html">X-NUCLEO-CCA01M1</a></li>
+</ul>
+</div>
+</div>
+<div class="collapse">
+<input type="checkbox" id="collapse-section5" aria-hidden="true"> <label for="collapse-section5" aria-hidden="true">v1.1.1 / 01-Sep-2016</label>
+<div>
+<h2 id="main-changes-5">Main Changes</h2>
+<h3 id="patch-release-2">Patch release</h3>
+<ul>
+<li>Modified I2C configuration for F0</li>
+</ul>
+<h2 id="supported-devices-and-boards-5">Supported Devices and Boards</h2>
+<ul>
+<li><a href="https://www.st.com/en/ecosystems/x-nucleo-cca01m1.html">X-NUCLEO-CCA01M1</a></li>
+</ul>
+</div>
+</div>
+<div class="collapse">
+<input type="checkbox" id="collapse-section4" aria-hidden="true"> <label for="collapse-section4" aria-hidden="true">v1.1.0 / 14-Jun-2016</label>
+<div>
+<h2 id="main-changes-6">Main Changes</h2>
+<h3 id="maintenance-release-and-product-update">Maintenance release and Product update</h3>
+<ul>
+<li>Added STM32F7 BSP layer exploiting I2S peripheral</li>
+<li>Added STM32L4 BSP layer exploiting SAI peripheral</li>
+<li>Added defines in F4 BSP file in order to ease support for several MCUs</li>
+<li>Minors in comments and definitions</li>
+</ul>
+<h2 id="supported-devices-and-boards-6">Supported Devices and Boards</h2>
+<ul>
+<li><a href="https://www.st.com/en/ecosystems/x-nucleo-cca01m1.html">X-NUCLEO-CCA01M1</a></li>
+</ul>
+</div>
+</div>
+<div class="collapse">
+<input type="checkbox" id="collapse-section3" aria-hidden="true"> <label for="collapse-section3" aria-hidden="true">v1.0.0 / 06-Oct2015</label>
+<div>
+<h2 id="main-changes-7">Main Changes</h2>
+<h3 id="first-official-release">First official release</h3>
+<ul>
+<li>First official release of BSP for X-NUCLEO-CCA01M1 board</li>
+</ul>
+<h2 id="supported-devices-and-boards-7">Supported Devices and Boards</h2>
+<ul>
+<li><a href="https://www.st.com/en/ecosystems/x-nucleo-cca01m1.html">X-NUCLEO-CCA01M1</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<footer class="sticky">
+<div class="columns">
+<div class="column" style="width:95%;">
+<p>For complete documentation on <strong>X-NUCLEO-CCA01M1</strong> , visit: <a href="https://www.st.com/en/ecosystems/x-nucleo-cca01m1.html">www.st.com</a></p>
+</div><div class="column" style="width:5%;">
+<p><abbr title="Based on template cx566953 version 2.0">Info</abbr></p>
+</div>
+</div>
+</footer>
+</body>
+</html>

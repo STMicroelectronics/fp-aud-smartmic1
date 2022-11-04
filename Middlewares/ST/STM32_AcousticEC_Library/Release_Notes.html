@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Release Notes for AcousticEC library</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <link rel="stylesheet" href="_htmresc/mini-st_2020.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <link rel="icon" type="image/x-icon" href="_htmresc/favicon.png" />
+</head>
+<body>
+<div class="row">
+<div class="col-sm-12 col-lg-4">
+<center>
+<h1 id="release-notes-for-acousticec-library">Release Notes for <mark>AcousticEC library</mark></h1>
+<p>Copyright © 2020 STMicroelectronics<br />
+</p>
+<a href="https://www.st.com" class="logo"><img src="_htmresc/st_logo_2020.png" alt="ST logo" /></a>
+</center>
+<h1 id="purpose">Purpose</h1>
+<p>The <strong>AcousticEC Acoustic Echo Cancellation</strong> software library is an optimized software implementation for Acoustic Echo Cancellation based on the open source patent-free SPEEX software.</p>
+<p>AcousticEC library implements the well known <strong>Speex Acoustic echo cancellation</strong> algorithm.</p>
+<p>AcousticEC allows the user to experience advanced AEC algorithms whith a minimum effort. A fully configurable system is provided to perform AEC.</p>
+<p><strong>AcousticEC features</strong> :</p>
+<ul>
+<li>Advance AEC library</li>
+<li>Configurable Speex preprocess options:
+<ul>
+<li>denoiser</li>
+<li>AGC</li>
+</ul></li>
+<li>PCM input</li>
+<li>Designed for optimal performance in applications using ST’s digital MEMS microphones (such as MP34DT06J).</li>
+<li>Easy portability across different STM32 MCU families thanks to modular architecture and STM32Cube</li>
+<li>Free user-friendly license terms</li>
+</ul>
+<p>This Library includes one header file acoustic_bf.h and binary/object codes running on running on STM32 devices based on CortexM4F and CortexM7F cores.</p>
+<p>From v3.0.0, the library has been released also in source code.</p>
+<p>Here is the list of references to the user documents:</p>
+<ul>
+<li><a href="https://www.st.com/resource/en/user_manual/dm00390471.pdf">UM2213</a>: Getting started with AcousticEC, real-time acoustic echo cancellation middleware</li>
+<li><a href="https://www.st.com/resource/en/user_manual/dm00393676.pdf">UM2219</a>: Getting started with STM32Cube function pack for MEMS microphones acquisition, advanced audio processing and audio output</li>
+</ul>
+</div>
+<div class="col-sm-12 col-lg-8">
+<h1 id="update-history">Update history</h1>
+<div class="collapse">
+<input type="checkbox" id="collapse-section9" checked aria-hidden="true"> <label for="collapse-section8" aria-hidden="true"> v3.1.0 / 16-Sep-2022 </label>
+<div>
+<h2 id="main-changes">Main changes</h2>
+<h3 id="maintenance-release">Maintenance release</h3>
+<ul>
+<li>Added header license neutral</li>
+<li>Added licence files</li>
+</ul>
+<h2 id="known-limitations">Known limitations</h2>
+<ul>
+<li>The compiled version of the library supports MCUs based on M33, M4 and M7 cores with FPU unit.</li>
+<li>For other purposes, source code is available</li>
+</ul>
+<h2 id="development-toolchains-and-compilers">Development toolchains and compilers</h2>
+<ul>
+<li>ARM GCC compiler, softfp and hardfp options
+<ul>
+<li>With Keil use wc16_softfp version</li>
+<li>With IAR 8 or STM32CubeIDE use wc32 or wc32_softfp version</li>
+<li>With IAR 7 use wc16 or wc16_softfp version</li>
+</ul></li>
+<li>Source code version has been tested in
+<ul>
+<li>IAR Embedded Workbench for ARM (EWARM) toolchain V9.20.1</li>
+<li>RealView Microcontroller Development Kit (MDK-ARM) toolchain V5.37</li>
+<li>STM32CubeIDE Version 1.10.1</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div class="collapse">
+<input type="checkbox" id="collapse-section8" aria-hidden="true"> <label for="collapse-section8" aria-hidden="true"> v3.0.0 / 8-Oct-2021 </label>
+<div>
+<h2 id="main-changes-1">Main changes</h2>
+<h3 id="product-update">Product update</h3>
+<ul>
+<li>Released library in source code</li>
+</ul>
+<h2 id="known-limitations-1">Known limitations</h2>
+<ul>
+<li>The compiled version of the library supports MCUs based on M33, M4 and M7 cores with FPU unit.</li>
+<li>For other purposes, source code is available</li>
+</ul>
+<h2 id="development-toolchains-and-compilers-1">Development toolchains and compilers</h2>
+<ul>
+<li>ARM GCC compiler, softfp and hardfp options
+<ul>
+<li>With Keil use wc16_softfp version</li>
+<li>With IAR 8 or STM32CubeIDE use wc32 or wc32_softfp version</li>
+<li>With IAR 7 use wc16 or wc16_softfp version</li>
+</ul></li>
+<li>Source code version has been tested in
+<ul>
+<li>IAR Embedded Workbench for ARM (EWARM) toolchain V8.50.9</li>
+<li>RealView Microcontroller Development Kit (MDK-ARM) toolchain V5.32</li>
+<li>STM32CubeIDE Version 1.7.0</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div class="collapse">
+<input type="checkbox" id="collapse-section7" aria-hidden="true"> <label for="collapse-section7" aria-hidden="true"> v2.3.0 / 18-Dec-2020 </label>
+<div>
+<h2 id="main-changes-2">Main changes</h2>
+<h3 id="product-update-1">Product update</h3>
+<ul>
+<li>Added support for Cortex M33</li>
+<li>Added hardfp compiled version libraries</li>
+</ul>
+<h2 id="known-limitations-2">Known limitations</h2>
+<ul>
+<li>The provided library supports MCUs based on M33, M4 and M7 cores with FPU unit.</li>
+</ul>
+<h2 id="development-toolchains-and-compilers-2">Development toolchains and compilers</h2>
+<ul>
+<li>ARM GCC compiler, softfp and hardfp options
+<ul>
+<li>With Keil use wc16_softfp version</li>
+<li>With IAR 8 or STM32CubeIDE use wc32 or wc32_softfp version</li>
+<li>With IAR 7 use wc16 or wc16_softfp version</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div class="collapse">
+<input type="checkbox" id="collapse-section6" aria-hidden="true"> <label for="collapse-section6" aria-hidden="true"> v2.2.0 / 29-Mar-2019 </label>
+<div>
+<h2 id="main-changes-3">Main changes</h2>
+<h3 id="maintenance-release-1">Maintenance release</h3>
+<ul>
+<li>Unification of the librariy to single EABI library per Cortex core and wchar size</li>
+</ul>
+<h2 id="known-limitations-3">Known limitations</h2>
+<ul>
+<li>The provided library supports MCUs based on M4 and M7 cores with FPU unit.</li>
+</ul>
+<h2 id="development-toolchains-and-compilers-3">Development toolchains and compilers</h2>
+<ul>
+<li>ARM GCC compiler, softfp options</li>
+</ul>
+</div>
+</div>
+<div class="collapse">
+<input type="checkbox" id="collapse-section5" aria-hidden="true"> <label for="collapse-section5" aria-hidden="true"> v2.1.1 / 15-Feb-2018 </label>
+<div>
+<h2 id="main-changes-4">Main changes</h2>
+<h3 id="maintenance-and-patch-release">Maintenance and patch release</h3>
+<ul>
+<li>Added support for STM32H7</li>
+</ul>
+<h2 id="known-limitations-4">Known limitations</h2>
+<ul>
+<li>The provided library supports MCUs based on M4 and M7 cores with FPU unit.</li>
+</ul>
+<h2 id="development-toolchains-and-compilers-4">Development toolchains and compilers</h2>
+<ul>
+<li>IAR Embedded Workbench for ARM (EWARM) toolchain V8.20</li>
+<li>RealView Microcontroller Development Kit (MDK-ARM) toolchain V5.24.1</li>
+<li>Ac6 System Workbench for STM32 V2.1.4</li>
+</ul>
+</div>
+</div>
+<div class="collapse">
+<input type="checkbox" id="collapse-section4" aria-hidden="true"> <label for="collapse-section4" aria-hidden="true"> v2.0.1 / 12-Jul-2017 </label>
+<div>
+<h2 id="main-changes-5">Main changes</h2>
+<h3 id="patch-release">Patch release</h3>
+<ul>
+<li>Added IAR 8.11 support.</li>
+</ul>
+<h2 id="known-limitations-5">Known limitations</h2>
+<ul>
+<li>The provided library supports MCUs based on M4 and M7 cores with FPU unit.</li>
+<li>A compiler warning is generated when using the library in IAR v 7.x. It doesn’t affect library performances.</li>
+</ul>
+<h2 id="development-toolchains-and-compilers-5">Development toolchains and compilers</h2>
+<ul>
+<li>IAR Embedded Workbench for ARM (EWARM) toolchain V8.11 (backward compatible with IAR 7.x)</li>
+<li>RealView Microcontroller Development Kit (MDK-ARM) toolchain V5.23</li>
+<li>Ac6 System Workbench for STM32 V2.1.0</li>
+</ul>
+</div>
+</div>
+<div class="collapse">
+<input type="checkbox" id="collapse-section3" aria-hidden="true"> <label for="collapse-section3" aria-hidden="true"> v2.0.0 / 08-Mar-2017 </label>
+<div>
+<h2 id="main-changes-6">Main changes</h2>
+<h3 id="product-update-2">Product update</h3>
+<ul>
+<li>First version of the library published under the ODE initiative. Previously released as part of OSX framework.</li>
+</ul>
+<h2 id="known-limitations-6">Known limitations</h2>
+<ul>
+<li>The provided library supports MCUs based on M4 and M7 cores with FPU unit.</li>
+</ul>
+<h2 id="development-toolchains-and-compilers-6">Development toolchains and compilers</h2>
+<ul>
+<li>IAR Embedded Workbench for ARM (EWARM) toolchain V7.70 + ST-Link</li>
+<li>RealView Microcontroller Development Kit (MDK-ARM) toolchain V5.23 + ST-LINK</li>
+<li>Ac6 System Workbench for STM32 V1.13.1 + ST-LINK/V2</li>
+</ul>
+</div>
+</div>
+<div class="collapse">
+<input type="checkbox" id="collapse-section2" aria-hidden="true"> <label for="collapse-section2" aria-hidden="true"> v1.1.0 / 01-Sep-2016 </label>
+<div>
+<h2 id="main-changes-7">Main changes</h2>
+<h3 id="maintenance-release-2">Maintenance release</h3>
+<ul>
+<li>Speex preprocessor options have been added as configuration parameters</li>
+<li>Removed include of the license file from the library header</li>
+<li>Added support for M7 cores</li>
+</ul>
+<h2 id="known-limitations-7">Known limitations</h2>
+<ul>
+<li>The provided library supports MCUs based on M4 and M7 cores with FPU unit.</li>
+</ul>
+<h2 id="development-toolchains-and-compilers-7">Development toolchains and compilers</h2>
+<ul>
+<li>IAR Embedded Workbench for ARM (EWARM) toolchain V7.70 + ST-Link</li>
+<li>RealView Microcontroller Development Kit (MDK-ARM) toolchain V5.20 + ST-LINK</li>
+<li>Ac6 System Workbench for STM32 V1.9.1 + ST-LINK/V2</li>
+</ul>
+</div>
+</div>
+<div class="collapse">
+<input type="checkbox" id="collapse-section1" aria-hidden="true"> <label for="collapse-section1" aria-hidden="true"> v1.0.0 / 15-Sep-2015 </label>
+<div>
+<h2 id="main-changes-8">Main changes</h2>
+<h3 id="first-release">First release</h3>
+<ul>
+<li>First official version of the library.</li>
+</ul>
+<h2 id="known-limitations-8">Known limitations</h2>
+<ul>
+<li>The provided library supports STM32F4xx devices with FPU unit.</li>
+</ul>
+<h2 id="development-toolchains-and-compilers-8">Development toolchains and compilers</h2>
+<ul>
+<li>IAR Embedded Workbench for ARM (EWARM) toolchain V7.30 + ST-Link</li>
+<li>RealView Microcontroller Development Kit (MDK-ARM) toolchain V5.12 + ST-LINK</li>
+<li>Ac6 System Workbench for STM32 V1.3.0 + ST-LINK</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<footer class="sticky">
+<div class="columns">
+<div class="column" style="width:95%;">
+<p>For complete documentation on <strong>AcousticEC library</strong> , visit: <a href="https://www.st.com/en/embedded-software/fp-aud-smartmic1.html">AcousticEC library</a></p>
+</div><div class="column" style="width:5%;">
+<p><abbr title="Based on template cx566953 version 2.0">Info</abbr></p>
+</div>
+</div>
+</footer>
+</body>
+</html>

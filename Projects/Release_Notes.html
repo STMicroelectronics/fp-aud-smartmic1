@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Release Notes for FP-AUD-SMARTMIC1 application examples</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <link rel="stylesheet" href="../_htmresc/mini-st_2020.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <link rel="icon" type="image/x-icon" href="../_htmresc/favicon.png" />
+</head>
+<body>
+<div class="row">
+<div class="col-sm-12 col-lg-4">
+<center>
+<h1 id="release-notes-for-smartmic1-examples">Release Notes for <mark>SMARTMIC1 examples</mark></h1>
+<p>Copyright © 2022 STMicroelectronics<br />
+</p>
+<a href="https://www.st.com" class="logo"><img src="../_htmresc/st_logo_2020.png" alt="ST logo" /></a>
+</center>
+<h1 id="purpose">Purpose</h1>
+<p>SMARTMIC1 provides a firmware running on STM32 which acquires audio signals using four digital MEMS microphones, elaborates them by means of embedded DSP libraries and streams the processed audio to both an USB host and a loudspeaker connected to the relevant expansion board. The package includes the following acoustic libraries:</p>
+<ul>
+<li>AcousticBF library provides an implementation for a real-time adaptive beamforming algorithm: using the audio signals acquired from two digital MEMS microphones, it creates a virtual directional microphone pointing to a fixed direction in space.</li>
+<li>AcousticEC library provides an implementation for a real-time echo cancellation routine based on the well-known SPEEX implementation of the MDF algorithm.</li>
+<li>AcousticSL library provides an implementation for a real-time sound source localization algorithm: using 2 or 4 signals acquired from digital MEMS microphones, it can estimate the arrival direction of the audio source.</li>
+</ul>
+<p>The firmware provides implementation example for STM32 NUCLEO-F446RE board<br />
+equipped with:</p>
+<ul>
+<li>X-NUCLEO-CCA01M1, an expansion board based on the STA350BW Sound Terminal® 2.1-channel high-efficiency digital audio output system.</li>
+<li>X-NUCLEO-CCA02M2, an evaluation board based on digital MEMS microphones, designed around STMicroelectronics MP34DT06J digital microphones.</li>
+<li>STEVAL-MIC001Vx, STEVAL-MIC002Vx or STEVAL-MIC003Vx digital microphones.</li>
+</ul>
+<p>A sample implementation is available also for BlueCoin starter kit (STEVAL-BCNKT01V1).</p>
+</div>
+<div class="col-sm-12 col-lg-8">
+<h1 id="update-history">Update History</h1>
+<div class="collapse">
+<input type="checkbox" id="collapse-section2" checked aria-hidden="true"> <label for="collapse-section2" aria-hidden="true"><strong>v2.4.0 / 7-Oct-2022</strong></label>
+<div>
+<h2 id="main-changes">Main Changes</h2>
+<h3 id="maintenance-release">Maintenance release</h3>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Headline</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Updated STM32 HAL and Driver</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Updated Acoustic libraries</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Code cleaning and licensing refactoring</td>
+</tr>
+</tbody>
+</table>
+<h2 id="known-limitations">Known Limitations</h2>
+<ul>
+<li>None</li>
+</ul>
+<h2 id="development-toolchains-and-compilers">Development Toolchains and Compilers</h2>
+<ul>
+<li>IAR Embedded Workbench for ARM (EWARM) toolchain V9.20.1</li>
+<li>MDK-ARM toolchain V5.37</li>
+<li>STM32CubeIDE v1.10.1</li>
+</ul>
+<h2 id="supported-devices-and-boards">Supported Devices and Boards</h2>
+<ul>
+<li><a href="https://www.st.com/content/st_com/en/products/evaluation-tools/product-evaluation-tools/mcu-mpu-eval-tools/stm32-mcu-mpu-eval-tools/stm32-nucleo-boards/nucleo-f446re.html">NUCLEO-F446RE</a> Rev C</li>
+<li><a href="https://www.st.com/content/st_com/en/products/ecosystems/stm32-open-development-environment/stm32-nucleo-expansion-boards/stm32-ode-translate-hw/x-nucleo-cca01m1.html">X-NUCLEO-CCA01M1</a></li>
+<li><a href="https://www.st.com/content/st_com/en/products/ecosystems/stm32-open-development-environment/stm32-nucleo-expansion-boards/stm32-ode-sense-hw/x-nucleo-cca02m2.html">X-NUCLEO-CCA02M2</a></li>
+</ul>
+<h2 id="backward-compatibility">Backward Compatibility</h2>
+<ul>
+<li>None</li>
+</ul>
+<h2 id="dependencies">Dependencies</h2>
+<ul>
+<li>A communication infrastructure, based on the ST-LINK VCP or an ad-hoc composite Audio+VCP USB class and available in Utilities folder of the Function Pack, is set up in order to establish a link between the system and the PC. This allows to control the demo at runtime (enable/disable the algorithms) and retrieve the relevant data computed in the MCU, like the estimated dBSPL level or the direction of Arrival of the main audio source.</li>
+</ul>
+</div>
+</div>
+<div class="collapse">
+<input type="checkbox" id="collapse-section1" aria-hidden="true"> <label for="collapse-section1" aria-hidden="true"><strong>v2.3.0 / 8-Oct-2021</strong></label>
+<div>
+<h2 id="main-changes-1">Main Changes</h2>
+<h3 id="maintenance-release-1">Maintenance release</h3>
+<ul>
+<li>Using Acoustic libraries in source code</li>
+<li>VCP issue solved in Nucleo demo for IAR. Deleted 0.5 multiplication in AudioProcess.</li>
+</ul>
+<h2 id="known-limitations-1">Known Limitations</h2>
+<ul>
+<li>None</li>
+</ul>
+<h2 id="development-toolchains-and-compilers-1">Development Toolchains and Compilers</h2>
+<ul>
+<li>IAR Embedded Workbench for ARM (EWARM) toolchain V8.50.9</li>
+<li>MDK-ARM toolchain V5.32.0</li>
+<li>STM32CubeIDE v1.7.0</li>
+</ul>
+<h2 id="supported-devices-and-boards-1">Supported Devices and Boards</h2>
+<ul>
+<li><a href="https://www.st.com/content/st_com/en/products/evaluation-tools/product-evaluation-tools/mcu-mpu-eval-tools/stm32-mcu-mpu-eval-tools/stm32-nucleo-boards/nucleo-f446re.html">NUCLEO-F446RE</a> Rev C</li>
+<li><a href="https://www.st.com/content/st_com/en/products/ecosystems/stm32-open-development-environment/stm32-nucleo-expansion-boards/stm32-ode-translate-hw/x-nucleo-cca01m1.html">X-NUCLEO-CCA01M1</a></li>
+<li><a href="https://www.st.com/content/st_com/en/products/ecosystems/stm32-open-development-environment/stm32-nucleo-expansion-boards/stm32-ode-sense-hw/x-nucleo-cca02m2.html">X-NUCLEO-CCA02M2</a></li>
+</ul>
+<h2 id="backward-compatibility-1">Backward Compatibility</h2>
+<ul>
+<li>None</li>
+</ul>
+<h2 id="dependencies-1">Dependencies</h2>
+<ul>
+<li>A communication infrastructure, based on the ST-LINK VCP or an ad-hoc composite Audio+VCP USB class and available in Utilities folder of the Function Pack, is set up in order to establish a link between the system and the PC. This allows to control the demo at runtime (enable/disable the algorithms) and retrieve the relevant data computed in the MCU, like the estimated dBSPL level or the direction of Arrival of the main audio source.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<footer class="sticky">
+<div class="columns">
+<div class="column" style="width:95%;">
+<p>For complete documentation on <strong>STM32</strong> microcontrollers please visit: <a href="https://www.st.com/en/microcontrollers-microprocessors.html">www.st.com</a></p>
+</div><div class="column" style="width:5%;">
+<p><abbr title="Based on template cx566953 version 2.0">Info</abbr></p>
+</div>
+</div>
+</footer>
+</body>
+</html>

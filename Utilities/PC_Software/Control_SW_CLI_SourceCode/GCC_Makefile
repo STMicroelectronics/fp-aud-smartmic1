@@ -1,0 +1,27 @@
+TARGET = AudioSerialLib_Example
+TARGETOBJS = src/AudioSerialLib_Example.o \
+       ASTSerialLib/Source/ASTSerialLib.o \
+       ASTSerialLib/Source/CCronometer.o \
+       ASTSerialLib/Source/serial_protocol.o \
+       ASTSerialLib/Source/SerialComm.o \
+       ASTSerialLib/Source/CComPort_noQt.o \
+       AudioSerialLib/AudioModuleSerialLib.o \
+#       src/kbhit.o
+
+CXX = g++
+CC = gcc
+CFLAGS = -D CCOMPORT_NO_QT -D UNICODE  -Wall -I./mtu -I./src -I./ASTSerialLib/Include -I./AudioSerialLib
+CXXFLAGS = -D CCOMPORT_NO_QT -D UNICODE -Wall -I./mtu -I./src -I./ASTSerialLib/Include -I./AudioSerialLib
+#LDLIBS = -lrt -lpthread
+#LDFLAGS = -static
+
+all: $(TARGET)
+
+$(TARGET): $(TARGETOBJS)
+	$(CXX) $(TARGETOBJS) -o $(TARGET)
+
+clean:
+	rm -rf $(TARGETOBJS) $(TARGET)
+
+
+
