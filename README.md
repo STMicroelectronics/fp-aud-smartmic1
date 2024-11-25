@@ -2,6 +2,15 @@
 
 ![latest tag](https://img.shields.io/github/v/tag/STMicroelectronics/fp-aud-smartmic1.svg?color=brightgreen)
 
+> [!NOTE]
+> ## **FP-AUD-SMARTMIC1** software package is not available anymore in this repository
+> 
+> In this repository, the * `./Middlewares/ST/STM32_Audio` middleware libraries and the related projects (demos, applications, and examples) are **not available** here as they (the middleware libraries) are subject to some restrictive license terms requiring the user's approval via a "click thru" procedure.
+> 
+> If needed, they can be found inside the full firmware package available on our website `st.com` and downloadable from [here](https://www.st.com/en/embedded-software/fp-aud-smartmic1.html). You will be prompted to login or to register in case you have no account.
+
+## Overview
+
 **FP-AUD-SMARTMIC1** provides a firmware running on STM32 which acquires audio signals of four digital MEMS microphones, elaborates them by means of embedded
 DSP libraries and streams the processed audio to both an USB host and a loudspeaker connected to the relevant expansion board. A communication infrastructure 
 is provided as well, allowing the control of the device status and the setup of the running algorithm from a host PC.
