@@ -8,6 +8,8 @@
 > In this repository, the * `./Middlewares/ST/STM32_Audio` middleware libraries and the related projects (demos, applications, and examples) are **not available** here as they (the middleware libraries) are subject to some restrictive license terms requiring the user's approval via a "click thru" procedure.
 > 
 > If needed, they can be found inside the full firmware package available on our website `st.com` and downloadable from [here](https://www.st.com/en/embedded-software/fp-aud-smartmic1.html). You will be prompted to login or to register in case you have no account.
+>
+> Furthermore, this repository is now deprecated and not maintained anymore.
 
 ## Overview
 
